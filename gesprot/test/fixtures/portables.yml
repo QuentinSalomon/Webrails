@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  no_serie: 999
+  marque: samsung
+  etudiant_id: 1
+
+two:
+  no_serie: 939
+  marque: toshiba
+  etudiant_id: 3

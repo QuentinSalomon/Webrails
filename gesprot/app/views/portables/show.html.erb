@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>No serie:</strong>
+  <%= @portable.no_serie %>
+</p>
+
+<p>
+  <strong>Marque:</strong>
+  <%= @portable.marque %>
+</p>
+
+<p>
+  <strong>Etudiant:</strong>
+  <%= @portable.etudiant_id %>
+</p>
+
+<%= link_to 'Edit', edit_portable_path(@portable) %> |
+<%= link_to 'Back', portables_path %>

@@ -1,0 +1,29 @@
+<%= form_for(@portable) do |f| %>
+  <% if @portable.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@portable.errors.count, "error") %> prohibited this portable from being saved:</h2>
+
+      <ul>
+      <% @portable.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :no_serie %><br>
+    <%= f.text_field :no_serie %>
+  </div>
+  <div class="field">
+    <%= f.label :marque %><br>
+    <%= f.text_field :marque %>
+  </div>
+  <div class="field">
+    <%= f.label :etudiant_id %><br>
+    <%= f.number_field :etudiant_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

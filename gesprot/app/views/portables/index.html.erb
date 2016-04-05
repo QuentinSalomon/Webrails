@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Portables</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>No serie</th>
+      <th>Marque</th>
+      <th>Etudiant</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @portables.each do |portable| %>
+      <tr>
+        <td><%= portable.no_serie %></td>
+        <td><%= portable.marque %></td>
+        <td><%= portable.etudiant_id %></td>
+        <td><%= link_to 'Show', portable %></td>
+        <td><%= link_to 'Edit', edit_portable_path(portable) %></td>
+        <td><%= link_to 'Destroy', portable, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Portable', new_portable_path %>
