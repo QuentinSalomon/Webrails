@@ -14,12 +14,12 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password:curieuse
+  password: curieuse
   host: localhost
 
 development:
   <<: *default
-  database: gesprot
+  database: gesport
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: gesprot_production
-  username: gesprot
-  password: <%= ENV['GESPROT_DATABASE_PASSWORD'] %>
+  database: gesprot
+  username: root
+  password: curieuse
