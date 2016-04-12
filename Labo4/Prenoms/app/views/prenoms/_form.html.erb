@@ -1,0 +1,21 @@
+<%= form_for(@prenom, :remote => true) do |f| %>
+  <% if @prenom.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@prenom.errors.count, "error") %> prohibited this prenom from being saved:</h2>
+
+      <ul>
+      <% @prenom.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :texte %><br>
+    <%= f.text_field :texte %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

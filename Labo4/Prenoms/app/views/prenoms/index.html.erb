@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Prenoms</h1>
+<h3>
+  <button class="alert" message="Bonjour !!">Dis Bonjour!</button>
+  <a href="#" class="alert" message="Hello !!">Dis Hello!</a>
+</h3>
+<div id="heure_div">
+  Vous voulez l'heure?
+  <%= link_to "Cliquer ici", dire_heure_prenoms_path, :data => {:remote=>true} %>
+  et je vais voir...
+</div>
+<br>
+
+  <%= render :partial => "form" %>
+  <ul id="prenoms">
+     <% @prenoms.each do |prenom| %>
+        <%= render :partial => "prenom", :locals => {:prenom => prenom} %>
+     <% end %>
+  </ul>
+<br>
+
+<%= link_to 'New Prenom', new_prenom_path %>
