@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Prenoms</h1>
+<div  class="visible">
 <h3>
   <button class="alert" message="Bonjour !!">Dis Bonjour!</button>
   <a href="#" class="alert" message="Hello !!">Dis Hello!</a>
@@ -12,6 +13,10 @@
 </div>
 <br>
 
+<button class="visible" id="visibilite">Allons à l'essentiel!!</button>
+
+<br>
+</div>
   <%= render :partial => "form" %>
   <ul id="prenoms">
      <% @prenoms.each do |prenom| %>
@@ -19,5 +24,13 @@
      <% end %>
   </ul>
 <br>
+
+<br/>
+  <h2>Recherche de prénoms</h2>
+
+  <%= text_field_tag :recherche_prenom %>
+
+  <div id="resultats"></div>
+<br/>
 
 <%= link_to 'New Prenom', new_prenom_path %>

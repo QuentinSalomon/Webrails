@@ -1,0 +1,21 @@
+// Place all the behaviors and hooks related to the matching controller here.
+// All this logic will automatically be available in application.js.
+// You can use CoffeeScript in this file: http://coffeescript.org/
+
+$(function() {
+  $(".alert").click(function() {
+    alert(this.getAttribute("message"));
+    return false;
+  })
+  $("#recherche_prenom").change(function() {
+    $.get("<%= Rails.application.routes.url_helpers.recherche_prenom_prenoms_path %>",
+      {texte:$(this).val()}, function(data){ $("#resultats").html(data); });
+  })
+  $(".delete_prenom").click(function() {
+      alert("Ca va disparaître !!");
+      $(this).closest('li').fadeOut(3000);
+  })
+  $("#visibilite").click(function() {
+    $(".visible").fadeOut(1000);
+  })
+})

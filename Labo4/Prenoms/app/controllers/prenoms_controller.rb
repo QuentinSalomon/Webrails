@@ -9,6 +9,20 @@ class PrenomsController < ApplicationController
     end
   end
 
+  def recherche_prenom
+    texte_a_rechercher = params[:texte] #Extraction du paramètre 'texte'
+    @prenoms_recherches=Prenom.where("texte like '%#{texte_a_rechercher}%'")
+    render :partial => "recherche_prenom"
+  end
+
+  def destroy
+    @prenom.destroy
+    respond_to do |format|
+      format.html { redirect_to prenoms_url }
+      format.json { head :no_content }
+      format.js {render :nothing => true}
+    end
+  end
 
   # GET /prenoms
   # GET /prenoms.json

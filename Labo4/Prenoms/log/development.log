@@ -340,3 +340,1847 @@ Started GET "/assets/prenoms.self-a43780ed23b3bcd5f899884d8c6ccc3f1867eed61972f5
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 14:19:41 +0200
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:08:41 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (18.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (30.3ms)
+  [1m[35mPrenom Load (0.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.5ms)
+  Rendered prenoms/index.html.erb within layouts/application (134.1ms)
+Completed 200 OK in 506ms (Views: 482.8ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:08:42 +0200
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:23:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (23.0ms)
+  [1m[35mPrenom Load (0.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (125.9ms)
+Completed 200 OK in 587ms (Views: 564.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:23:57 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:23:57 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:23:57 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:23:58 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:23:58 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:23:58 +0200
+
+
+Started GET "/assets/prenoms.self-d23250bf3ef2c6b747e5ebc000c69e0a1e6257ba53b8eb9878bcf20d50d2ff1e.js?body=1" for ::1 at 2016-04-19 15:23:58 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:23:58 +0200
+
+
+Started GET "/prenoms/recherche_prenom?texte=blavla" for ::1 at 2016-04-19 15:24:06 +0200
+Processing by PrenomsController#recherche_prenom as */*
+  Parameters: {"texte"=>"blavla"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `where' for nil:NilClass):
+  app/controllers/prenoms_controller.rb:14:in `recherche_prenom'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (701.8ms)
+
+
+Started GET "/prenoms/recherche_prenom?texte=b" for ::1 at 2016-04-19 15:24:49 +0200
+Processing by PrenomsController#recherche_prenom as */*
+  Parameters: {"texte"=>"b"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `where' for nil:NilClass):
+  app/controllers/prenoms_controller.rb:14:in `recherche_prenom'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (810.0ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:37:22 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT `prenoms`.* FROM `prenoms`[0m
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (101.3ms)
+Completed 200 OK in 228ms (Views: 215.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:37:23 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (102.1ms)
+Completed 200 OK in 198ms (Views: 196.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:37:44 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (23.0ms)
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (141.7ms)
+Completed 200 OK in 535ms (Views: 511.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:37:45 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:37:45 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:37:45 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:37:45 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:37:45 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:37:45 +0200
+
+
+Started GET "/assets/prenoms.self-d23250bf3ef2c6b747e5ebc000c69e0a1e6257ba53b8eb9878bcf20d50d2ff1e.js?body=1" for ::1 at 2016-04-19 15:37:45 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:37:45 +0200
+
+
+Started GET "/prenoms/recherche_prenom?texte=b" for ::1 at 2016-04-19 15:37:50 +0200
+Processing by PrenomsController#recherche_prenom as */*
+  Parameters: {"texte"=>"b"}
+  [1m[36mPrenom Load (15.6ms)[0m  [1mSELECT `prenoms`.* FROM `prenoms` WHERE (texte like '%b%')[0m
+  Rendered prenoms/_recherche_prenom.html.erb (15.6ms)
+Completed 200 OK in 232ms (Views: 220.0ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/prenoms/recherche_prenom?texte=u" for ::1 at 2016-04-19 15:37:58 +0200
+Processing by PrenomsController#recherche_prenom as */*
+  Parameters: {"texte"=>"u"}
+  [1m[35mPrenom Load (0.0ms)[0m  SELECT `prenoms`.* FROM `prenoms` WHERE (texte like '%u%')
+  Rendered prenoms/_recherche_prenom.html.erb (0.0ms)
+Completed 200 OK in 209ms (Views: 211.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:46:42 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.5ms)
+  [1m[36mPrenom Load (2.0ms)[0m  [1mSELECT `prenoms`.* FROM `prenoms`[0m
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (144.1ms)
+Completed 200 OK in 273ms (Views: 259.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:46:42 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:46:42 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:46:42 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:46:42 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:46:42 +0200
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:46:42 +0200
+
+
+Started GET "/assets/prenoms.self-d23250bf3ef2c6b747e5ebc000c69e0a1e6257ba53b8eb9878bcf20d50d2ff1e.js?body=1" for ::1 at 2016-04-19 15:46:42 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:46:42 +0200
+
+
+Started DELETE "/prenoms/20" for ::1 at 2016-04-19 15:46:44 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"20"}
+  [1m[35mPrenom Load (15.6ms)[0m  SELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 20 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (15.6ms)[0m  DELETE FROM `prenoms` WHERE `prenoms`.`id` = 20
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 31ms (ActiveRecord: 31.3ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 15:46:44 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (210.8ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:46:46 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (84.1ms)
+Completed 200 OK in 187ms (Views: 185.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:46:46 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:46:46 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:46:46 +0200
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:46:46 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:46:46 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:46:46 +0200
+
+
+Started GET "/assets/prenoms.self-d23250bf3ef2c6b747e5ebc000c69e0a1e6257ba53b8eb9878bcf20d50d2ff1e.js?body=1" for ::1 at 2016-04-19 15:46:46 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:46:46 +0200
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:49:59 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT `prenoms`.* FROM `prenoms`[0m
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (84.6ms)
+Completed 200 OK in 286ms (Views: 284.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:49:59 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:49:59 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:49:59 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:49:59 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:49:59 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:49:59 +0200
+
+
+Started GET "/assets/prenoms.self-95cb8fb35302f4896d5d77affd39a845dd5dc3da1c60f739bff17762c8949f24.js?body=1" for ::1 at 2016-04-19 15:49:59 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:49:59 +0200
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 15:50:02 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaaa"}, "commit"=>"Create Prenom"}
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaaa', '2016-04-19 13:50:02', '2016-04-19 13:50:02')[0m
+  [1m[35m (2.0ms)[0m  COMMIT
+  Rendered prenoms/_prenom.html.erb (2.0ms)
+  Rendered prenoms/create.js (45.3ms)
+Completed 200 OK in 160ms (Views: 143.2ms | ActiveRecord: 5.0ms)
+
+
+Started DELETE "/prenoms/21" for ::1 at 2016-04-19 15:50:03 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"21"}
+  [1m[36mPrenom Load (1.0ms)[0m  [1mSELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 21 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM `prenoms` WHERE `prenoms`.`id` = 21[0m
+  [1m[35m (1.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 14ms (ActiveRecord: 3.8ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 15:50:03 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (226.0ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:50:08 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT `prenoms`.* FROM `prenoms`[0m
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (81.7ms)
+Completed 200 OK in 189ms (Views: 188.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:50:08 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:50:08 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:50:08 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:50:08 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:50:08 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:50:08 +0200
+
+
+Started GET "/assets/prenoms.self-95cb8fb35302f4896d5d77affd39a845dd5dc3da1c60f739bff17762c8949f24.js?body=1" for ::1 at 2016-04-19 15:50:08 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:50:08 +0200
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 15:50:20 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaa"}, "commit"=>"Create Prenom"}
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaa', '2016-04-19 13:50:20', '2016-04-19 13:50:20')[0m
+  [1m[35m (2.0ms)[0m  COMMIT
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/create.js (15.6ms)
+Completed 200 OK in 106ms (Views: 103.7ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/prenoms/22" for ::1 at 2016-04-19 15:50:45 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"22"}
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 22 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM `prenoms` WHERE `prenoms`.`id` = 22[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 15:50:45 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (217.9ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:52:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (23.0ms)
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (112.1ms)
+Completed 200 OK in 481ms (Views: 453.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:52:18 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:52:18 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:52:18 +0200
+
+
+Started GET "/assets/prenoms.self-95cb8fb35302f4896d5d77affd39a845dd5dc3da1c60f739bff17762c8949f24.js?body=1" for ::1 at 2016-04-19 15:52:18 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:52:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:52:18 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:52:18 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:52:18 +0200
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 15:52:23 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaa"}, "commit"=>"Create Prenom"}
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaa', '2016-04-19 13:52:23', '2016-04-19 13:52:23')
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/create.js (28.8ms)
+Completed 200 OK in 121ms (Views: 109.6ms | ActiveRecord: 3.1ms)
+
+
+Started DELETE "/prenoms/23" for ::1 at 2016-04-19 15:52:24 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"23"}
+  [1m[35mPrenom Load (0.0ms)[0m  SELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 23 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM `prenoms` WHERE `prenoms`.`id` = 23
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 27ms (ActiveRecord: 5.0ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 15:52:25 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (225.4ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:54:14 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (82.4ms)
+Completed 200 OK in 174ms (Views: 171.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:54:14 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:54:14 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:54:14 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:54:14 +0200
+
+
+Started GET "/assets/prenoms.self-95cb8fb35302f4896d5d77affd39a845dd5dc3da1c60f739bff17762c8949f24.js?body=1" for ::1 at 2016-04-19 15:54:14 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:54:14 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:54:14 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:54:14 +0200
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 15:54:17 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaa"}, "commit"=>"Create Prenom"}
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaa', '2016-04-19 13:54:17', '2016-04-19 13:54:17')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/create.js (31.3ms)
+Completed 200 OK in 114ms (Views: 111.8ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/prenoms/24" for ::1 at 2016-04-19 15:54:18 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"24"}
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 24 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM `prenoms` WHERE `prenoms`.`id` = 24
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 17ms (ActiveRecord: 5.0ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 15:54:18 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (265.2ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:54:34 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (2.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (43.0ms)
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 1.0ms)
+
+SyntaxError (C:/Users/quentin/Desktop/CoursOptions/WEB/rails_workspace/Labo4/Prenoms/app/views/prenoms/_prenom.html.erb:5: syntax error, unexpected ',', expecting '}'
+...=> "delete_prenom", :data => {,:remote => true, :method => :...
+...                               ^
+C:/Users/quentin/Desktop/CoursOptions/WEB/rails_workspace/Labo4/Prenoms/app/views/prenoms/_prenom.html.erb:5: Can't assign to true
+...m", :data => {,:remote => true, :method => :delete} );@outpu...
+...                               ^
+C:/Users/quentin/Desktop/CoursOptions/WEB/rails_workspace/Labo4/Prenoms/app/views/prenoms/_prenom.html.erb:5: syntax error, unexpected =>, expecting :: or '[' or '.'
+...> {,:remote => true, :method => :delete} );@output_buffer.sa...
+...                               ^
+C:/Users/quentin/Desktop/CoursOptions/WEB/rails_workspace/Labo4/Prenoms/app/views/prenoms/_prenom.html.erb:8: syntax error, unexpected keyword_ensure, expecting ')'
+C:/Users/quentin/Desktop/CoursOptions/WEB/rails_workspace/Labo4/Prenoms/app/views/prenoms/_prenom.html.erb:10: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/prenoms/_prenom.html.erb:5: syntax error, unexpected ',', expecting '}'
+  app/views/prenoms/_prenom.html.erb:5: Can't assign to true
+  app/views/prenoms/_prenom.html.erb:5: syntax error, unexpected =>, expecting :: or '[' or '.'
+  app/views/prenoms/_prenom.html.erb:8: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/prenoms/_prenom.html.erb:10: syntax error, unexpected keyword_end, expecting ')'
+  app/views/prenoms/index.html.erb:18:in `block in _app_views_prenoms_index_html_erb__263930157_37827432'
+  app/views/prenoms/index.html.erb:17:in `_app_views_prenoms_index_html_erb__263930157_37827432'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (698.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (633.4ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1548.6ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:54:43 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT `prenoms`.* FROM `prenoms`[0m
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (82.2ms)
+Completed 200 OK in 177ms (Views: 176.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:54:43 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:54:43 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:54:43 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:54:43 +0200
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:54:43 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:54:43 +0200
+
+
+Started GET "/assets/prenoms.self-95cb8fb35302f4896d5d77affd39a845dd5dc3da1c60f739bff17762c8949f24.js?body=1" for ::1 at 2016-04-19 15:54:43 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:54:43 +0200
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 15:54:49 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaa"}, "commit"=>"Create Prenom"}
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaa', '2016-04-19 13:54:49', '2016-04-19 13:54:49')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/create.js (15.6ms)
+Completed 200 OK in 107ms (Views: 106.2ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/prenoms/25" for ::1 at 2016-04-19 15:54:50 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"25"}
+  [1m[36mPrenom Load (1.0ms)[0m  [1mSELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 25 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM `prenoms` WHERE `prenoms`.`id` = 25[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 15ms (ActiveRecord: 3.0ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 15:54:50 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (268.2ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:56:28 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (26.0ms)
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (119.1ms)
+Completed 200 OK in 430ms (Views: 405.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:56:28 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:56:28 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:56:28 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:56:28 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:56:28 +0200
+
+
+Started GET "/assets/prenoms.self-95cb8fb35302f4896d5d77affd39a845dd5dc3da1c60f739bff17762c8949f24.js?body=1" for ::1 at 2016-04-19 15:56:28 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:56:29 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:56:29 +0200
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 15:56:31 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaa"}, "commit"=>"Create Prenom"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaa', '2016-04-19 13:56:31', '2016-04-19 13:56:31')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/create.js (31.2ms)
+Completed 200 OK in 117ms (Views: 114.9ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/prenoms/26" for ::1 at 2016-04-19 15:56:33 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"26"}
+  [1m[35mPrenom Load (0.0ms)[0m  SELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 26 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM `prenoms` WHERE `prenoms`.`id` = 26
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 28ms (ActiveRecord: 3.0ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 15:56:33 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (227.2ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:57:18 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[35mPrenom Load (0.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (81.1ms)
+Completed 200 OK in 202ms (Views: 189.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:57:18 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:57:18 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:57:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:57:18 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:57:18 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:57:18 +0200
+
+
+Started GET "/assets/prenoms.self-95cb8fb35302f4896d5d77affd39a845dd5dc3da1c60f739bff17762c8949f24.js?body=1" for ::1 at 2016-04-19 15:57:18 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:57:18 +0200
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 15:57:21 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaa"}, "commit"=>"Create Prenom"}
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaa', '2016-04-19 13:57:21', '2016-04-19 13:57:21')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/create.js (31.3ms)
+Completed 200 OK in 106ms (Views: 103.4ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/prenoms/27" for ::1 at 2016-04-19 15:57:22 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"27"}
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 27 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM `prenoms` WHERE `prenoms`.`id` = 27
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 16ms (ActiveRecord: 4.0ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 15:57:22 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (229.7ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:58:27 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (24.0ms)
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (110.7ms)
+Completed 200 OK in 405ms (Views: 380.4ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:58:28 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:58:28 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:58:28 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:58:28 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:58:28 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:58:28 +0200
+
+
+Started GET "/assets/prenoms.self-95cb8fb35302f4896d5d77affd39a845dd5dc3da1c60f739bff17762c8949f24.js?body=1" for ::1 at 2016-04-19 15:58:28 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:58:28 +0200
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 15:58:30 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaa"}, "commit"=>"Create Prenom"}
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaa', '2016-04-19 13:58:30', '2016-04-19 13:58:30')
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/create.js (27.0ms)
+Completed 200 OK in 118ms (Views: 107.5ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 15:58:32 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaaaa"}, "commit"=>"Create Prenom"}
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaaaa', '2016-04-19 13:58:32', '2016-04-19 13:58:32')[0m
+  [1m[35m (2.0ms)[0m  COMMIT
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/create.js (31.3ms)
+Completed 200 OK in 117ms (Views: 108.1ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 15:58:34 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaaaaaaaa"}, "commit"=>"Create Prenom"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaaaaaaaa', '2016-04-19 13:58:34', '2016-04-19 13:58:34')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/create.js (31.3ms)
+Completed 200 OK in 119ms (Views: 122.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/prenoms/30" for ::1 at 2016-04-19 15:58:40 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"30"}
+  [1m[35mPrenom Load (0.0ms)[0m  SELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 30 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM `prenoms` WHERE `prenoms`.`id` = 30
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 22ms (ActiveRecord: 2.0ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 15:58:40 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (6.7ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (226.4ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 15:59:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (25.0ms)
+  [1m[35mPrenom Load (2.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (161.3ms)
+Completed 200 OK in 465ms (Views: 438.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 15:59:24 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 15:59:24 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 15:59:24 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 15:59:24 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 15:59:24 +0200
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 15:59:24 +0200
+
+
+Started GET "/assets/prenoms.self-95cb8fb35302f4896d5d77affd39a845dd5dc3da1c60f739bff17762c8949f24.js?body=1" for ::1 at 2016-04-19 15:59:24 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 15:59:24 +0200
+
+
+Started DELETE "/prenoms/29" for ::1 at 2016-04-19 15:59:27 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"29"}
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 29 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM `prenoms` WHERE `prenoms`.`id` = 29[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 15:59:27 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (218.8ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 16:01:08 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (2.0ms)
+  [1m[36mPrenom Load (2.0ms)[0m  [1mSELECT `prenoms`.* FROM `prenoms`[0m
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (148.1ms)
+Completed 200 OK in 395ms (Views: 390.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 16:01:08 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 16:01:08 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 16:01:08 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 16:01:08 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 16:01:08 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 16:01:08 +0200
+
+
+Started GET "/assets/prenoms.self-f8dad32fde117b222e4ad8d81a689af4dbf49419cf7638e5dfba485c14f66566.js?body=1" for ::1 at 2016-04-19 16:01:08 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 16:01:08 +0200
+
+
+Started DELETE "/prenoms/28" for ::1 at 2016-04-19 16:01:09 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"28"}
+  [1m[35mPrenom Load (0.0ms)[0m  SELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 28 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM `prenoms` WHERE `prenoms`.`id` = 28
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 16:01:09 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (242.3ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 16:01:28 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[35mPrenom Load (0.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (82.5ms)
+Completed 200 OK in 193ms (Views: 191.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 16:01:28 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 16:01:28 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 16:01:28 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 16:01:28 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 16:01:28 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 16:01:28 +0200
+
+
+Started GET "/assets/prenoms.self-f8dad32fde117b222e4ad8d81a689af4dbf49419cf7638e5dfba485c14f66566.js?body=1" for ::1 at 2016-04-19 16:01:28 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 16:01:28 +0200
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 16:02:19 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaa"}, "commit"=>"Create Prenom"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaa', '2016-04-19 14:02:19', '2016-04-19 14:02:19')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/create.js (23.7ms)
+Completed 200 OK in 107ms (Views: 104.1ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/prenoms/31" for ::1 at 2016-04-19 16:02:23 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"31"}
+  [1m[35mPrenom Load (0.0ms)[0m  SELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 31 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM `prenoms` WHERE `prenoms`.`id` = 31
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 16:02:23 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (213.8ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 16:02:28 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (101.1ms)
+Completed 200 OK in 334ms (Views: 332.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 16:02:28 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 16:02:28 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 16:02:28 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 16:02:28 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 16:02:28 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 16:02:28 +0200
+
+
+Started GET "/assets/prenoms.self-e69a474e61d9d5fa83019271a52b7d24e8799ffc7fb23f3d758dc0ed418d79a7.js?body=1" for ::1 at 2016-04-19 16:02:28 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 16:02:28 +0200
+
+
+Started DELETE "/prenoms/5" for ::1 at 2016-04-19 16:02:48 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"5"}
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM `prenoms` WHERE `prenoms`.`id` = 5[0m
+  [1m[35m (2.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 6ms (ActiveRecord: 2.3ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 16:02:48 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (215.8ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 16:04:20 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT `prenoms`.* FROM `prenoms`[0m
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (58.4ms)
+Completed 200 OK in 146ms (Views: 144.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 16:04:20 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 16:04:20 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 16:04:20 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 16:04:20 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 16:04:20 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 16:04:20 +0200
+
+
+Started GET "/assets/prenoms.self-e69a474e61d9d5fa83019271a52b7d24e8799ffc7fb23f3d758dc0ed418d79a7.js?body=1" for ::1 at 2016-04-19 16:04:20 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 16:04:20 +0200
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 16:04:23 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaa"}, "commit"=>"Create Prenom"}
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaa', '2016-04-19 14:04:23', '2016-04-19 14:04:23')[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/create.js (31.3ms)
+Completed 200 OK in 113ms (Views: 115.7ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/prenoms/32" for ::1 at 2016-04-19 16:04:24 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"32"}
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 32 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM `prenoms` WHERE `prenoms`.`id` = 32[0m
+  [1m[35m (1.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 16:04:24 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (233.2ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 16:04:29 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT `prenoms`.* FROM `prenoms`[0m
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (58.7ms)
+Completed 200 OK in 153ms (Views: 152.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 16:04:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 16:04:29 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 16:04:29 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 16:04:29 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 16:04:29 +0200
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 16:04:29 +0200
+
+
+Started GET "/assets/prenoms.self-e69a474e61d9d5fa83019271a52b7d24e8799ffc7fb23f3d758dc0ed418d79a7.js?body=1" for ::1 at 2016-04-19 16:04:29 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 16:04:29 +0200
+
+
+Started DELETE "/prenoms/7" for ::1 at 2016-04-19 16:04:33 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"7"}
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 7 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM `prenoms` WHERE `prenoms`.`id` = 7
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 8ms (ActiveRecord: 3.0ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 16:04:33 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (553.4ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 16:13:22 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (23.0ms)
+  [1m[35mPrenom Load (0.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (71.7ms)
+Completed 200 OK in 505ms (Views: 483.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 16:13:23 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 16:13:23 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 16:13:23 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 16:13:23 +0200
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 16:13:23 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 16:13:23 +0200
+
+
+Started GET "/assets/prenoms.self-1000864b1a3e9b4b1b3c0eb5d6fe0db44d5a49365e5992d5f53936ee7aee5876.js?body=1" for ::1 at 2016-04-19 16:13:23 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 16:13:23 +0200
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 16:13:29 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"aaa"}, "commit"=>"Create Prenom"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('aaa', '2016-04-19 14:13:29', '2016-04-19 14:13:29')
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/create.js (29.5ms)
+Completed 200 OK in 120ms (Views: 107.4ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 16:13:31 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"luc"}, "commit"=>"Create Prenom"}
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('luc', '2016-04-19 14:13:31', '2016-04-19 14:13:31')[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/create.js (27.7ms)
+Completed 200 OK in 124ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/prenoms" for ::1 at 2016-04-19 16:13:37 +0200
+Processing by PrenomsController#create as JS
+  Parameters: {"utf8"=>"✓", "prenom"=>{"texte"=>"pierre"}, "commit"=>"Create Prenom"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `prenoms` (`texte`, `created_at`, `updated_at`) VALUES ('pierre', '2016-04-19 14:13:37', '2016-04-19 14:13:37')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/create.js (31.3ms)
+Completed 200 OK in 115ms (Views: 109.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 16:13:40 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[35mPrenom Load (0.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (103.9ms)
+Completed 200 OK in 230ms (Views: 228.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 16:13:41 +0200
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 16:13:41 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 16:13:41 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 16:13:41 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 16:13:41 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 16:13:41 +0200
+
+
+Started GET "/assets/prenoms.self-1000864b1a3e9b4b1b3c0eb5d6fe0db44d5a49365e5992d5f53936ee7aee5876.js?body=1" for ::1 at 2016-04-19 16:13:41 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 16:13:41 +0200
+
+
+Started DELETE "/prenoms/33" for ::1 at 2016-04-19 16:13:44 +0200
+Processing by PrenomsController#destroy as JS
+  Parameters: {"id"=>"33"}
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT  `prenoms`.* FROM `prenoms` WHERE `prenoms`.`id` = 33 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM `prenoms` WHERE `prenoms`.`id` = 33[0m
+  [1m[35m (1.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/prenoms
+Completed 302 Found in 28ms (ActiveRecord: 3.2ms)
+
+
+Started DELETE "/prenoms" for ::1 at 2016-04-19 16:13:44 +0200
+
+ActionController::RoutingError (No route matches [DELETE] "/prenoms"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (259.2ms)
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 16:14:03 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT `prenoms`.* FROM `prenoms`[0m
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (83.1ms)
+Completed 200 OK in 183ms (Views: 182.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 16:14:03 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 16:14:03 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 16:14:04 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 16:14:04 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 16:14:04 +0200
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 16:14:04 +0200
+
+
+Started GET "/assets/prenoms.self-1000864b1a3e9b4b1b3c0eb5d6fe0db44d5a49365e5992d5f53936ee7aee5876.js?body=1" for ::1 at 2016-04-19 16:14:04 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 16:14:04 +0200
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 16:15:09 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[35mPrenom Load (1.0ms)[0m  SELECT `prenoms`.* FROM `prenoms`
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.5ms)
+  Rendered prenoms/index.html.erb within layouts/application (85.0ms)
+Completed 200 OK in 184ms (Views: 181.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 16:15:10 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 16:15:10 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 16:15:10 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 16:15:10 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 16:15:10 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 16:15:10 +0200
+
+
+Started GET "/assets/prenoms.self-1000864b1a3e9b4b1b3c0eb5d6fe0db44d5a49365e5992d5f53936ee7aee5876.js?body=1" for ::1 at 2016-04-19 16:15:10 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 16:15:10 +0200
+
+
+Started GET "/prenoms" for ::1 at 2016-04-19 16:15:56 +0200
+Processing by PrenomsController#index as HTML
+  Rendered prenoms/_form.html.erb (1.0ms)
+  [1m[36mPrenom Load (0.0ms)[0m  [1mSELECT `prenoms`.* FROM `prenoms`[0m
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (0.0ms)
+  Rendered prenoms/_prenom.html.erb (1.0ms)
+  Rendered prenoms/index.html.erb within layouts/application (80.1ms)
+Completed 200 OK in 268ms (Views: 266.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/prenoms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-19 16:15:56 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-19 16:15:56 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-19 16:15:56 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-19 16:15:56 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-19 16:15:56 +0200
+
+
+Started GET "/assets/scaffolds.self-12639647da8fa5583794962073cae3664a2428b399ecf09c0a60727b54cc371b.css?body=1" for ::1 at 2016-04-19 16:15:56 +0200
+
+
+Started GET "/assets/prenoms.self-ee7bc7127e733925260f2b0669aa26aad7a6de451c8c74a44f5b52e82dd8b578.js?body=1" for ::1 at 2016-04-19 16:15:56 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-19 16:15:56 +0200

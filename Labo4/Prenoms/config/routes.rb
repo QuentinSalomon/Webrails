@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :prenoms do
     collection do
       get :dire_heure
+      get :recherche_prenom
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.
