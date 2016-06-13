@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Achat Essences</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Km traveled</th>
+      <th>Liters</th>
+      <th>Price per liter</th>
+      <th>Vehicul</th>
+      <th>Gas station</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @achat_essences.each do |achat_essence| %>
+      <% if achat_essence.vehicul_id == params[:vehicul_id].to_i %>
+        <tr>
+          <td><%= achat_essence.km_traveled %></td>
+          <td><%= achat_essence.liters %></td>
+          <td><%= achat_essence.price_per_liter %></td>
+          <% vehicul = Vehicul.find(achat_essence.vehicul_id) %>
+          <% gas_station = GasStation.find(achat_essence.gas_station_id) %>
+          <td><%= link_to vehicul.name, vehicul_path(vehicul.id) %></td>
+          <td><%= link_to gas_station.brand, gas_station_path(gas_station.id) %></td>
+          <td><%= link_to 'Show', achat_essence %></td>
+          <td><%= link_to 'Edit', edit_achat_essence_path(achat_essence) %></td>
+          <td><%= link_to 'Destroy', achat_essence, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Achat essence', new_achat_essence_path(:vehicul_id => params[:vehicul_id]) %>

@@ -1,0 +1,62 @@
+<%= form_for(@gas_station) do |f| %>
+  <% if @gas_station.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gas_station.errors.count, "error") %> prohibited this gas_station from being saved:</h2>
+
+      <ul>
+      <% @gas_station.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="field">
+      <%= f.label :latitude %><br>
+      <%= f.text_field :latitude %>
+    </div>
+    <div class="field">
+      <%= f.label :longitude %><br>
+      <%= f.text_field :longitude %>
+    </div>
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :brand %><br>
+      <%= f.text_field :brand %>
+    </div>
+
+    <% test = Array.wrap(nil) %>
+    <table>
+      <thead>
+        <tr>
+          <% @gas_types.each do |item| %>
+            <th><%= item.name %></th>
+            <% test.append(item) %>
+          <% end %>
+        </tr>
+      </thead>
+      <tbody>
+        <% test.each do |head| %>
+        <% flag = false %>
+          <% @gas_station.gas_station_types.each do |item| %>
+            <% if head.id == item.gas_type.id %>
+              <% flag = true %>
+            <% end %>
+          <% end %>
+          <td>
+            <%= check_box_tag("gas_station_types[gas_ids][]",head.id,flag) %>
+          </td>
+        <% end %>
+      </tbody>
+    </table>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-8 homeTitle">
+      <h1>Stations</h1>
+    </div>
+  </div>
+
+  <%= form_tag find_homes_path, :remote => true, :method => :get do %>
+  <div class="form-group">
+      <%= text_field_tag("researchtext",nil, {placeholder: 'Enter search term...', class: 'form-control'}) %> <br>
+  </div>
+  <div class="form-actions">
+      <%= submit_tag("Search",{class: 'btn btn-primary'}) %>
+  </div>
+  <% end %>
+  </div>
+  <br>
+  <div id="result">
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Km traveled:</strong>
+  <%= @achat_essence.km_traveled %>
+</p>
+
+<p>
+  <strong>Liters:</strong>
+  <%= @achat_essence.liters %>
+</p>
+
+<p>
+  <strong>Price per liter:</strong>
+  <%= @achat_essence.price_per_liter %>
+</p>
+
+<p>
+  <strong>Vehicul:</strong>
+  <%= @achat_essence.vehicul_id %>
+</p>
+
+<p>
+  <strong>Gas station:</strong>
+  <%= @achat_essence.gas_station_id %>
+</p>
+
+<%= link_to 'Edit', edit_achat_essence_path(@achat_essence) %> |
+<%= link_to 'Back', achat_essences_path(:vehicul_id => @achat_essence.vehicul_id) %>

@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <strong>Name:</strong>
+      <%= @vehicul.name %>
+    </p>
+
+    <p>
+      <strong>Brand:</strong>
+      <%= @vehicul.brand %>
+    </p>
+
+    <p>
+      <strong>Category:</strong>
+      <%= @vehicul.category %>
+    </p>
+
+    <p>
+      <strong>Km:</strong>
+      <%= @vehicul.km %>
+    </p>
+
+    <p>
+      <strong>User:</strong>
+      <%= @vehicul.user_id %>
+    </p>
+
+    <%= link_to 'Edit', edit_vehicul_path(@vehicul) %> |
+    <%= link_to 'Back', vehiculs_path %>
+  </div>
+</div>

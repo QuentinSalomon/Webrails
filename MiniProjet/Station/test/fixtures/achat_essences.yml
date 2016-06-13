@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  km_traveled: 12.4
+  liters: 1.1
+  price_per_liter: 1.66
+  vehicul_id: 1
+  gas_station_id: 2
+
+two:
+  km_traveled: 145.6
+  liters: 12
+  price_per_liter: 1.53
+  vehicul_id: 2
+  gas_station_id: 1

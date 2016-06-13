@@ -1,0 +1,11 @@
+après le pull :
+
+rake db:migrate
+
+rake db:fixtures:load
+
+
+(Crée un utilisateur admin
+	user: qwertz@qwertz.ch
+	mdp:  qwertz
+)

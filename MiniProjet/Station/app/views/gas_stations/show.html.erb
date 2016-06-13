@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @gas_station.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @gas_station.longitude %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @gas_station.name %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @gas_station.brand %>
+</p>
+
+<p>
+  <strong>Gas type : </strong><br>
+  <% @gas_station.gas_station_types.each do |item| %>
+    <%= item.gas_type.name %><br>
+  <% end %>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Price</th>
+      <th>Date</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+<% essences = GasStationType.where("gas_station_id = ?", @gas_station.id) %>
+  <tbody>
+    <% essences.each do |essence| %>
+      <% essence_type = GasType.find(essence.gas_type_id) %>
+      <tr>
+        <td><%= essence.price %></td>
+        <td><%= essence.date %></td>
+        <td><%= essence_type.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% if current_user != nil %>
+  <% if current_user.has_role?(:admin) %>
+    <%= link_to 'Edit', edit_gas_station_path(@gas_station) %> |
+  <% end %>
+<% end %>
+<%= link_to 'Back', gas_stations_path %>

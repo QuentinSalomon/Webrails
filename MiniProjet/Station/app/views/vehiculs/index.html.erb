@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <div class="row">
+    <h1>Listing Vehiculs</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Brand</th>
+          <th>Category</th>
+          <th>Km</th>
+          <!--<th>User</th>-->
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+  <tbody>
+    <% @vehiculs.each do |vehicul| %>
+      <% if current_user.id == vehicul.user_id %>
+        <tr>
+          <td><%= vehicul.name %></td>
+          <td><%= vehicul.brand %></td>
+          <td><%= vehicul.category %></td>
+          <td><%= vehicul.km %></td>
+          <!--<td><%= vehicul.user_id %></td>-->
+          <td><%= link_to 'Show', vehicul %></td>
+          <td><%= link_to 'Purchase', achat_essences_path(:vehicul_id => vehicul.id) %></td>
+          <td><%= link_to 'Edit', edit_vehicul_path(vehicul) %></td>
+          <td><%= link_to 'Destroy', vehicul, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+    <br>
+
+    <%= link_to 'New Vehicul', new_vehicul_path %>
+  </div>
+</div>

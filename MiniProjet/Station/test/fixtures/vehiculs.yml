@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Luc mobile
+  brand: merco
+  category: voiture de compète
+  km: 150.2
+  user_id: 2
+  id: 1
+  gas_type_id: 1
+
+two:
+  name: Quentin mobile
+  brand: fiat
+  category: fusée
+  km: 90.4
+  user_id: 1
+  id: 2
+  gas_type_id: 2

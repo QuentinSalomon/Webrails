@@ -1,0 +1,39 @@
+<%= form_for(@achat_essence) do |f| %>
+  <% if @achat_essence.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@achat_essence.errors.count, "error") %> prohibited this achat_essence from being saved:</h2>
+
+      <ul>
+      <% @achat_essence.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :km_traveled %><br>
+    <%= f.text_field :km_traveled %>
+  </div>
+  <div class="field">
+    <%= f.label :liters %><br>
+    <%= f.text_field :liters %>
+  </div>
+  <div class="field">
+    <%= f.label :price_per_liter %><br>
+    <%= f.text_field :price_per_liter %>
+  </div>
+  <% if @achat_essence.new_record? %>
+    <div class="field" style="display: none;">
+      <%= f.label :vehicul_id, :value => params[:vehicul_id] %><br>
+      <%= f.hidden_field :vehicul_id %>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :gas_station_id %><br>
+    <%= f.number_field :gas_station_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

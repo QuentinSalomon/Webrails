@@ -1,0 +1,6 @@
+one:
+  id: 1
+  email: qwertz@qwertz.ch
+  nom: admin
+  prenom: admin
+  encrypted_password: $2a$11$D1y1bTExgX7tWaql/0mU1ugjmwhzG5Gxs4nQFfZY3fwhhy8xDulcW
